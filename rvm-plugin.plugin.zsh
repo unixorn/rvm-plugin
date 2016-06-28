@@ -22,6 +22,7 @@ else
     rvm_installer=$(mktemp /tmp/install_rvm.XXXXXX)
     curl -sSL 'https://get.rvm.io' > "${rvm_installer}"
     "${rvm_installer}" stable
+    rm -f "${rvm_installer}"
   }
 
 fi
