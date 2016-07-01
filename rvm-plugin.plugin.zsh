@@ -17,6 +17,8 @@ if [[ -x $HOME/.rvm/scripts/rvm ]]; then
 
 else
 
+  echo "$HOME/.rvm/scripts/rvm not found. You can install it with install-rvm."
+
   function install-rvm() {
     local rvm_installer
     rvm_installer=$(mktemp /tmp/install_rvm.XXXXXX)
